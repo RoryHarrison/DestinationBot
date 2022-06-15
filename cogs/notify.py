@@ -16,7 +16,7 @@ class NotifyCog(commands.Cog):
         datetime_seoul = datetime.now(tz_seoul)
         seoul_time = datetime_seoul.strftime("%H:%M")
 
-        hot_time = "01:35"
+        hot_time = "19:00"
         reset_time = "00:00"
 
         if seoul_time == hot_time:
