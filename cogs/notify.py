@@ -16,14 +16,14 @@ class NotifyCog(commands.Cog):
         datetime_seoul = datetime.now(tz_seoul)
         seoul_time = datetime_seoul.strftime("%H:%M")
 
-        hot_time = "19:00"
+        hot_time = "01:35"
         reset_time = "00:00"
 
         if seoul_time == hot_time:
             print("Sending Hot Time Message")
             try:
-                channel = self.bot.get_channel(986628762965770260)
-                await channel.send('@everyone Hot Time :fire:')
+                channel = self.bot.get_channel(984516754837491882)
+                await channel.send('<@&986669663909986365> Hot Time :fire:')
             except Exception as e:
                 print(f"failed to send message: {e}")
 
@@ -31,8 +31,8 @@ class NotifyCog(commands.Cog):
         if seoul_time == reset_time:
             print("Sending Reset Time Message")
             try:
-                channel = self.bot.get_channel(986628762965770260)
-                await channel.send('@everyone Reset Time :recycle:')
+                channel = self.bot.get_channel(984516754837491882)
+                await channel.send('<@&986669663909986365> Reset Time :recycle:')
             except Exception as e:
                 print(f"failed to send message: {e}")
 
